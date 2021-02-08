@@ -6,12 +6,26 @@ const port = 8080;
 app.get("/", (req, res) => res.send("Hello World on AWS Cloud. Great!"));
 
 app.get("/products", (req, res) => {
-    res.json({
-        name: "Mobile Phone",
-        title: "Smart phone",
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget accumsan erat. Quisque non diam vitae est finibus tempus. Quisque pharetra imperdiet leo. Suspendisse tincidunt efficitur sollicitudin. Suspendisse interdum consectetur leo, sit amet ultricies nisl varius sit amet. Suspendisse lorem neque, convallis sit amet imperdiet non, ultricies quis massa. Quisque sed eleifend lacus, eget aliquam nunc. Curabitur posuere lectus et turpis varius, in semper erat viverra. Nullam ac blandit velit.",
-    });
+    res.json([
+        {
+            name: "Mobile Phone e534",
+            title: "Smart phone",
+            description:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget accumsan erat. Quisque non diam vitae est finibus tempus. Quisque pharetra imperdiet leo. Suspendisse tincidunt efficitur sollicitudin. Suspendisse interdum consectetur leo, sit amet ultricies nisl varius sit amet. Suspendisse lorem neque, convallis sit amet imperdiet non, ultricies quis massa. Quisque sed eleifend lacus, eget aliquam nunc. Curabitur posuere lectus et turpis varius, in semper erat viverra. Nullam ac blandit velit.",
+        },
+        {
+            name: "Mobile Phone 1343 ",
+            title: "Smart phone",
+            description:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget accumsan erat. Quisque non diam vitae est finibus tempus. Quisque pharetra imperdiet leo. Suspendisse tincidunt efficitur sollicitudin. Suspendisse interdum consectetur leo, sit amet ultricies nisl varius sit amet. Suspendisse lorem neque, convallis sit amet imperdiet non, ultricies quis massa. Quisque sed eleifend lacus, eget aliquam nunc. Curabitur posuere lectus et turpis varius, in semper erat viverra. Nullam ac blandit velit.",
+        },
+        {
+            name: "Mobile Phone 35465",
+            title: "Smart phone",
+            description:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget accumsan erat. Quisque non diam vitae est finibus tempus. Quisque pharetra imperdiet leo. Suspendisse tincidunt efficitur sollicitudin. Suspendisse interdum consectetur leo, sit amet ultricies nisl varius sit amet. Suspendisse lorem neque, convallis sit amet imperdiet non, ultricies quis massa. Quisque sed eleifend lacus, eget aliquam nunc. Curabitur posuere lectus et turpis varius, in semper erat viverra. Nullam ac blandit velit.",
+        },
+    ]);
 });
 
 app.listen(port);
